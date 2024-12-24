@@ -26,7 +26,7 @@ user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
              'Chrome/99.0.4844.82 Safari/537.36'
 if len(sys.argv) == 1:
     msg = """
-A `.git` folder disclosure exploit. By LiJieJie
+A `.git` folder disclosure exploit. By Abhay
 
 Usage: python GitHack.py http://www.target.com/.git/
 """
@@ -117,7 +117,7 @@ class Scanner(object):
                     break
                 except urllib2.HTTPError as e:
                     if str(e).find('HTTP Error 404') >= 0:
-                        self._print('[File not found] %s' % file_name)
+                        self._print('[File Not Found] %s' % file_name)
                         break
                 except Exception as e:
                     self._print('[Error] %s' % str(e))
@@ -143,4 +143,4 @@ if __name__ == '__main__':
     except KeyboardInterrupt as e:
         s.STOP_ME = True
         time.sleep(1.0)
-        print('User Aborted.')
+        print('User Aborted...')
