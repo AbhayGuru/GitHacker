@@ -1,4 +1,4 @@
 GitHacker
 
 **USAGE:**
-python3 githack.py
+python GitHack.py http://www.openssl.org/.git/
